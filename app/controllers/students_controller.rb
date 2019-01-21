@@ -12,7 +12,7 @@ class StudentsController < ApplicationController
   end
 
   def create
-    @post=Post.create({first_name:params[:first_name:],last_name:params[:last_name]})
+    @post=Post.create({first_name:params[:first_name],last_name:params[:last_name]})
     redirect_to post_path(@post)
   end
 
